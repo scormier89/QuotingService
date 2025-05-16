@@ -1,0 +1,61 @@
+# ===========================
+# .NET
+# ===========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+launchSettings.json
+
+# ASP.NET Secrets
+secrets.json
+
+# Build results
+[Bb]uild/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Others
+*.db
+*.sqlite
+*.bak
+*.log
+
+# Rider
+.idea/
+
+# DotCover
+.idea/.idea.DotSettings
+
+# ===========================
+# Node / Angular
+# ===========================
+node_modules/
+dist/
+.tmp/
+.angular/
+.angular-cache/
+.npm/
+package-lock.json
+.env
+
+# VSCode
+.vscode/
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+
+# NPM debug log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
