@@ -43,7 +43,7 @@ cd QuotingService
 
 ```bash
 cd QuotingService/QuotingService
-dotnet run
+dotnet run --launch-profile "https"
 ```
 
 - Should run on: `https://localhost:5001`
