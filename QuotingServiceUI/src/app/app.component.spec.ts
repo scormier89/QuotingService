@@ -1,9 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { QuoteComponent } from './quote/quote.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [AppComponent, QuoteComponent],
+    imports: [BrowserModule,
+        HttpClientModule,
+        FormsModule],
   }));
 
   it('should create the app', () => {
@@ -22,6 +29,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('QuotingServiceUI app is running!');
+    expect(compiled.textContent).toContain('Insurance Quote');
   });
 });
